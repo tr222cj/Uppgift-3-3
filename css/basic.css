@@ -2,6 +2,7 @@
 
 body {
     font-size: 100%;
+    background-color: rgb(252, 250, 244);
 }
 
 #container {
@@ -24,6 +25,28 @@ body {
 
 #menu {
     
+}
+
+/* enbart a med href="#maincontent" */
+#menu a[href="#maincontent"] {
+    font: 1em "Verdana", sans-serif;
+    padding: 5px;
+	position: absolute;
+	top: -40px; /* dölj när den inte är i focus genom att lägga den utanför skärmen */
+	left: 0px;
+	background: transparent;
+	color: white ; /* följer inte övriga färger för att göra den extra synlig när den väl syns */
+	-webkit-transition: top 1s ease-out, background 1s linear; /* äldre android browsers och Safari */
+    transition: top 1s ease-out, background 1s linear;
+    z-index: 100; /* för att vara säke rpå att denna alltid hamnar överst */
+}
+
+#menu a[href="#maincontent"]:focus {
+	position: absolute;
+	top: 0px;
+	background: red; /* följer inte övriga färger för att göra den extra synlig när den väl syns */
+	-webkit-transition: top .1s ease-in, background .5s linear; /* äldre android browsers och Safari */
+    transition: top .1s ease-in, background .5s linear;
 }
 
 #menu ul li {
