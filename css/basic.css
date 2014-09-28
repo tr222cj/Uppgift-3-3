@@ -96,10 +96,26 @@ body {
 #content {
     background-color: rgb(234, 231, 210);
     clear: left;
+    padding: 0 10px;
 }
 
 #maincontent {
-    
+    color: rgb(121, 112, 102);
+}
+
+#maincontent h1 {
+    font-family: "Times new roman", serif;
+    font-weight: normal;
+}
+
+#maincontent p {
+    font-family: "Verdana", sans-serif;
+    line-height: 1.3em;
+}
+
+#maincontent img {
+    float: left;
+    padding-right: 5px;
 }
 
 #subcontent {
