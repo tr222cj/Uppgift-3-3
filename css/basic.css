@@ -130,7 +130,7 @@ body {
     float: right;
     font-size: 0.7em;
     padding-left: 10px;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /* tycker det blev lättare att läsa den relativt lilla texten om det var längre mellan bokstäverna */
 }
 
 #subcontent h1 {
@@ -161,9 +161,11 @@ body {
 #subcontent ul li a {
     color: rgb(121, 112, 102);
     font-size: 1.4em;
-    color: ;
 }
 
 #bottomcontent {
     clear: both;
+    font: italic 0.6em "Verdana", sans-serif;
+    font-size: 0.8em;
+    padding-top: 10px;
 }
