@@ -8,25 +8,22 @@ body {
 #container {
     max-width: 600px; /* background-image: coffey.jpg är så här bred */
     margin: 0 auto;
+        background-color: rgb(81, 71, 61);
 }
 
 #topbar {
-    height: 210px;
+    height: 210px; /* 220 = 210 + 2 * 5 padding */
     text-align: right;
     font: italic 0.6em "Verdana", sans-serif;
     color: rgb(234, 231, 210);
     padding: 5px;
     /* lägger background-* en och en för att enklare kunna manipulera dem var för sig i webbläsaren */
-    background-color: rgb(81, 71, 61);
     background-image: url('pics/coffey.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-#menu {
-    
-}
-
+/* SKIP NAVIGATION */
 /* enbart a med href="#maincontent" */
 #menu a[href="#maincontent"] {
     font: 1em "Verdana", sans-serif;
@@ -36,7 +33,7 @@ body {
 	left: 0px;
 	background: transparent;
 	color: white ; /* följer inte övriga färger för att göra den extra synlig när den väl syns */
-	-webkit-transition: top 1s ease-out, background 1s linear; /* äldre android browsers och Safari */
+	-webkit-transition: top 1s ease-out, background 1s linear; /* äldre Android browsers och Safari */
     transition: top 1s ease-out, background 1s linear;
     z-index: 100; /* för att vara säke rpå att denna alltid hamnar överst */
 }
@@ -45,16 +42,60 @@ body {
 	position: absolute;
 	top: 0px;
 	background: red; /* följer inte övriga färger för att göra den extra synlig när den väl syns */
-	-webkit-transition: top .1s ease-in, background .5s linear; /* äldre android browsers och Safari */
+	-webkit-transition: top .1s ease-in, background .5s linear; /* äldre Android browsers och Safari */
     transition: top .1s ease-in, background .5s linear;
 }
 
-#menu ul li {
-    display: inline;
+/* MENU */
+#menu {
+    float: left;
 }
 
+#menu ul {
+    font-family: "Verdana", sans-serif;
+    text-transform: capitalize;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 10px;
+}
+
+/* Får inte detta att fungera, det blir inte jämnt avstånd mellan alla "tabbarna". */
+
+#menu li {
+    display: inline;
+    padding: 0;
+}
+
+#menu ul li a {
+    display: inline-block;
+    color: rgb(234, 231, 244);
+    background-color: rgb(121, 112, 102);
+    border-top: 1px solid rgb(156, 144, 132);
+    padding: 5px 20px;
+    margin: 0 -5px 0 0;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#menu ul li.active a {
+    color: rgb(121, 112, 102);
+    background-color: rgb(234, 231, 210);
+    border: none;
+}
+
+#menu ul li.active a:hover {
+    color: rgb(234, 231, 244);
+}
+
+#menu ul li a:hover {
+    background-color: rgb(156, 144, 132);
+}
+
+
+/* CONTENT */
 #content {
-    
+    background-color: rgb(234, 231, 210);
+    clear: left;
 }
 
 #maincontent {
