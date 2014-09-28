@@ -59,8 +59,7 @@ body {
     padding: 5px 0 0 10px;
 }
 
-/* Får inte detta att fungera, det blir inte jämnt avstånd mellan alla "tabbarna". */
-
+/* Får inte detta att fungera, det blir inte jämnt avstånd mellan "tabbarna". */
 #menu li {
     display: inline;
     padding: 0;
@@ -72,7 +71,7 @@ body {
     background-color: rgb(121, 112, 102);
     border-top: 1px solid rgb(156, 144, 132);
     padding: 5px 20px;
-    margin: 0 -5px 0 0;
+    margin: 0 -4px 0 0;
     font-size: 0.8em;
     text-decoration: none;
 }
@@ -96,21 +95,29 @@ body {
 #content {
     background-color: rgb(234, 231, 210);
     clear: left;
-    padding: 0 10px;
+    padding: 20px 10px;
+    line-height: 20px;
+    font-size: 0.8em;
 }
 
 #maincontent {
     color: rgb(121, 112, 102);
+    width: 60%;
+    float: left;
+    border-right: 1px dashed rgb(121, 112, 102);
+    padding-right: 10px;
 }
 
 #maincontent h1 {
     font-family: "Times new roman", serif;
     font-weight: normal;
+    margin: 0 0 10px 0;
+    line-height: 35px;
 }
 
 #maincontent p {
     font-family: "Verdana", sans-serif;
-    line-height: 1.3em;
+    margin: 0;
 }
 
 #maincontent img {
@@ -119,9 +126,25 @@ body {
 }
 
 #subcontent {
-    
+    color: rgb(121, 112, 102);
+    width: 36%;
+    float: right;
+    font-size: 0.7em;
+    padding-left: 10px;
+}
+
+#subcontent h1 {
+    font-family: "Times new roman", serif;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    line-height: 35px;
+}
+
+#subcontent p {
+    font-family: "Verdana", sans-serif;
+    margin: 0;
 }
 
 #bottomcontent {
-    
+    clear: both;
 }
