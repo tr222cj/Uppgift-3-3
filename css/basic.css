@@ -1,19 +1,33 @@
 /* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
 
 body {
-    
+    font-size: 100%;
 }
 
 #container {
-    
+    max-width: 600px; /* background-image: coffey.jpg är så här bred */
+    margin: 0 auto;
 }
 
 #topbar {
-    
+    height: 210px;
+    text-align: right;
+    font: italic 0.6em "Verdana", sans-serif;
+    color: rgb(234, 231, 210);
+    padding: 5px;
+    /* lägger background-* en och en för att enklare kunna manipulera dem var för sig i webbläsaren */
+    background-color: rgb(81, 71, 61);
+    background-image: url('pics/coffey.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 #menu {
     
+}
+
+#menu ul li {
+    display: inline;
 }
 
 #content {
