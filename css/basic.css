@@ -8,7 +8,8 @@ body {
 #container {
     max-width: 600px; /* background-image: coffey.jpg är så här bred */
     margin: 0 auto;
-        background-color: rgb(81, 71, 61);
+    background-color: rgb(81, 71, 61);
+    border: 1px solid rgb(156, 144, 132);
 }
 
 #topbar {
